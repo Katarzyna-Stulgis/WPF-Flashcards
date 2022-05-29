@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bartek\\Desktop\\Flashcards\\Flashcards.csproj": {}
+    "S:\\Semestr_VI\\WPF\\PROJEKT\\WPF-Flashcards\\Flashcards.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bartek\\Desktop\\Flashcards\\Flashcards.csproj": {
+    "S:\\Semestr_VI\\WPF\\PROJEKT\\WPF-Flashcards\\Flashcards.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bartek\\Desktop\\Flashcards\\Flashcards.csproj",
+        "projectUniqueName": "S:\\Semestr_VI\\WPF\\PROJEKT\\WPF-Flashcards\\Flashcards.csproj",
         "projectName": "Flashcards",
-        "projectPath": "C:\\Users\\Bartek\\Desktop\\Flashcards\\Flashcards.csproj",
-        "packagesPath": "C:\\Users\\Bartek\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bartek\\Desktop\\Flashcards\\obj\\",
+        "projectPath": "S:\\Semestr_VI\\WPF\\PROJEKT\\WPF-Flashcards\\Flashcards.csproj",
+        "packagesPath": "C:\\Users\\katar\\.nuget\\packages\\",
+        "outputPath": "S:\\Semestr_VI\\WPF\\PROJEKT\\WPF-Flashcards\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "S:\\Środowiska\\Microsoft Visual Studio\\sdk\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Bartek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\katar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -63,7 +67,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -95,30 +95,43 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
+                <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
             <Button Grid.Column="0"
-                    Style="{StaticResource YNButton}"
+                    Style="{StaticResource LearningButton}"
                     Click="PreviousButton_Click">
                 <Button.Resources>
                     <Style TargetType="Button">
                         <Setter Property="Content" Value="Poprzednia"/>
                         <Setter Property="HorizontalAlignment" Value="Right"/>
-                        <Setter Property="Margin" Value="0,0,20,10"/>
+                        <Setter Property="Margin" Value="20"/>
                     </Style>
                 </Button.Resources>
             </Button>
             <Button Grid.Column="1"
-                    Style="{StaticResource YNButton}"
+                    Style="{StaticResource LearningButton}"
+                    Click="ShuffleButton_Click">
+                <Button.Resources>
+                    <Style TargetType="Button">
+                        <Setter Property="Content" Value="Tasuj"/>
+                        <Setter Property="HorizontalAlignment" Value="Left"/>
+                        <Setter Property="Margin" Value="20"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Grid.Column="2"
+                    Style="{StaticResource LearningButton}"
                     Click="NextButton_Click">
                 <Button.Resources>
                     <Style TargetType="Button">
                         <Setter Property="Content" Value="Następna"/>
                         <Setter Property="HorizontalAlignment" Value="Left"/>
-                        <Setter Property="Margin" Value="20,0,0,10"/>
+                        <Setter Property="Margin" Value="20"/>
                     </Style>
                 </Button.Resources>
             </Button>
+            
         </Grid>
 
         <Border Grid.Row="5"

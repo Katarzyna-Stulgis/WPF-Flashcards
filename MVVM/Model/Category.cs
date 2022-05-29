@@ -1,5 +1,7 @@
 ﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 
@@ -9,22 +11,24 @@ namespace Flashcards.MVVM.Model
     {
         public string name { get; set; }
 
-        public LinkedList<Flashcard> fiszki;
+        public List<Flashcard> fiszki { get; set; }
 
         public Category(string name)
         {
             this.name = name;
-            fiszki = new LinkedList<Flashcard>();
+            fiszki = new List<Flashcard>();
         }
 
         public void AddFiszka(int index, string pytanie, string odpowiedz)
         {
-            Flashcard fiszka = new Flashcard(pytanie, odpowiedz);
-
             string f = File.ReadAllText("folder.json");
             Folder folder = JsonConvert.DeserializeObject<Folder>(f);
 
-            folder.categories.ElementAt(index).fiszki.AddLast(fiszka);
+            Flashcard fiszka = new Flashcard(folder.categories.ElementAt(index).fiszki.Count + 1, pytanie, odpowiedz);
+
+
+
+            folder.categories.ElementAt(index).fiszki.Add(fiszka);
 
             string folderJson = JsonConvert.SerializeObject(folder);
             File.WriteAllText("folder.json", folderJson);
@@ -64,6 +68,14 @@ namespace Flashcards.MVVM.Model
 
             string folderJson = JsonConvert.SerializeObject(folder);
             File.WriteAllText("folder.json", folderJson);
+        }
+
+        public void ShuffleFlashcards()
+        {
+            var rnd = new Random();
+            var randomized = fiszki.OrderBy(item => rnd.Next()).ToList();
+            fiszki = randomized;
+            var x = fiszki;
         }
     }
 }

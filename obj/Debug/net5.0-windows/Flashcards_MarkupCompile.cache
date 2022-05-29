@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Bartek\Desktop\Flashcards\obj\Debug\net5.0-windows\
+S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\
 Flashcards
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-C:\Users\Bartek\Desktop\Flashcards\App.xaml
-18-1765415899
+S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\App.xaml
+192058926968
 
 34-2101383698
-194-435655124
-MVVM\View\DialogWindows\AddWindows\AddCategoryWindow.xaml;MVVM\View\DialogWindows\AddWindows\AddFlashcardWindow.xaml;MVVM\View\DialogWindows\DeleteWindows\DeleteCategoryWindow.xaml;MVVM\View\DialogWindows\DeleteWindows\DeleteFlashcardWindow.xaml;MVVM\View\DialogWindows\ExitWindow.xaml;MVVM\View\DialogWindows\RenameWindows\RenameCategoryWindow.xaml;MVVM\View\DialogWindows\RenameWindows\RenameFlashcardENG.xaml;MVVM\View\DialogWindows\RenameWindows\RenameFlashcardPL.xaml;MVVM\View\EditWindows\CategoryView.xaml;MVVM\View\EditWindows\EditCategoryOptionsView.xaml;MVVM\View\EditWindows\EditFlashcardOptionsView.xaml;MVVM\View\EditWindows\FlashcardView.xaml;MVVM\View\LearningWindows\LearningCategoriesView.xaml;MVVM\View\LearningWindows\LearningView.xaml;MVVM\View\MainWindows\MainMenu.xaml;MVVM\View\MainWindows\MainWindow.xaml;Themes\MenuButton.xaml;Themes\YNButton.xaml;
+194-903576576
+MVVM\View\DialogWindows\AddWindows\AddCategoryWindow.xaml;MVVM\View\DialogWindows\AddWindows\AddFlashcardWindow.xaml;MVVM\View\DialogWindows\DeleteWindows\DeleteCategoryWindow.xaml;MVVM\View\DialogWindows\DeleteWindows\DeleteFlashcardWindow.xaml;MVVM\View\DialogWindows\ExitWindow.xaml;MVVM\View\DialogWindows\RenameWindows\RenameCategoryWindow.xaml;MVVM\View\DialogWindows\RenameWindows\RenameFlashcardENG.xaml;MVVM\View\DialogWindows\RenameWindows\RenameFlashcardPL.xaml;MVVM\View\EditWindows\CategoryView.xaml;MVVM\View\EditWindows\EditCategoryOptionsView.xaml;MVVM\View\EditWindows\EditFlashcardOptionsView.xaml;MVVM\View\EditWindows\FlashcardView.xaml;MVVM\View\LearningWindows\LearningCategoriesView.xaml;MVVM\View\LearningWindows\LearningView.xaml;MVVM\View\MainWindows\MainMenu.xaml;MVVM\View\MainWindows\MainWindow.xaml;Themes\LearningButton.xaml;Themes\MenuButton.xaml;Themes\YNButton.xaml;
 
 False
 

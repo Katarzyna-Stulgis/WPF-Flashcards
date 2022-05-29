@@ -102,6 +102,9 @@
     <Page Update="MVVM\View\MainWindows\MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Themes\LearningButton.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Themes\MenuButton.xaml">
       <SubType>Designer</SubType>
     </Page>
