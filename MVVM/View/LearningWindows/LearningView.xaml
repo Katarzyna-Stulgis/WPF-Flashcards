@@ -31,7 +31,7 @@
                     Style="{StaticResource YNButton}">
                 <Button.Resources>
                     <Style TargetType="Button">
-                        <Setter Property="Command" Value="{Binding NavigateStartViewCommand}"/>
+                        <Setter Property="Command" Value="{Binding NavigateLearningCategoriesCommand}"/>
                         <Setter Property="Content" Value="Wstecz"/>
                         <Setter Property="HorizontalAlignment" Value="Right"/>
                         <Setter Property="Margin" Value="0,0,20,0"/>

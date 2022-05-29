@@ -37,7 +37,8 @@ namespace Flashcards.MVVM.View.MainWindows
             {
                 this.WindowState = WindowState.Maximized;
             }
-            else {
+            else
+            {
                 this.WindowState = WindowState.Normal;
             }
         }

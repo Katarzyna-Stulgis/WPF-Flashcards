@@ -33,7 +33,7 @@
                     Style="{StaticResource YNButton}">
                 <Button.Resources>
                     <Style TargetType="Button">
-                        <Setter Property="Command" Value="{Binding NavigateEditFiszkaCommand}"/>
+                        <Setter Property="Command" Value="{Binding NavigateEditFlashcardCommand}"/>
                         <Setter Property="Content" Value="Wstecz"/>
                         <Setter Property="HorizontalAlignment" Value="Right"/>
                         <Setter Property="VerticalAlignment" Value="Top"/>
@@ -48,7 +48,7 @@
                 Click="EditPLFiszkaButton_Click">
             <Button.Resources>
                 <Style TargetType="Button">
-                    <Setter Property="Command" Value="{Binding NavigateEditFiszkaCommand}"/>
+                    <Setter Property="Command" Value="{Binding NavigateEditFlashcardCommand}"/>
                     <Setter Property="Content" Value="EDYTUJ POLSKIE HASŁO"/>
                     <Setter Property="VerticalAlignment" Value="Center"/>
                     <Setter Property="HorizontalAlignment" Value="Center"/>
@@ -62,7 +62,7 @@
                 Click="EditENGFiszkaButton_Click">
             <Button.Resources>
                 <Style TargetType="Button">
-                    <Setter Property="Command" Value="{Binding NavigateEditFiszkaCommand}"/>
+                    <Setter Property="Command" Value="{Binding NavigateEditFlashcardCommand}"/>
                     <Setter Property="Content" Value="EDYTUJ ANGIELSKIE HASŁO"/>
                     <Setter Property="VerticalAlignment" Value="Center"/>
                     <Setter Property="HorizontalAlignment" Value="Center"/>
@@ -76,7 +76,7 @@
                 Click="DeleteFiszkaButton_Click">
             <Button.Resources>
                 <Style TargetType="Button">
-                    <Setter Property="Command" Value="{Binding NavigateEditFiszkaCommand}"/>
+                    <Setter Property="Command" Value="{Binding NavigateEditFlashcardCommand}"/>
                     <Setter Property="Content" Value="USUŃ FISZKĘ"/>
                     <Setter Property="VerticalAlignment" Value="Center"/>
                     <Setter Property="HorizontalAlignment" Value="Center"/>

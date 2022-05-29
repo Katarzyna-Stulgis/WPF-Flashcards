@@ -63,7 +63,7 @@ namespace Flashcards.MVVM.View.LearningWinodws
 
                 };
                 int categoryID = i;
-                btnNew.SetBinding(Button.CommandProperty, new Binding("NavigateStartFiszkaCommand"));
+                btnNew.SetBinding(Button.CommandProperty, new Binding("NavigateLearningFlashcardsCommand"));
                 btnNew.Click += (sender, e) => { LearningCategoriesViewModel edit = new LearningCategoriesViewModel(categoryID); };
                 myButtons.Add(btnNew);
             }

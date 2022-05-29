@@ -30,7 +30,7 @@
                     Style="{StaticResource YNButton}">
                     <Button.Resources>
                         <Style TargetType="Button">
-                            <Setter Property="Command" Value="{Binding NavigateEditViewCommand}"/>
+                            <Setter Property="Command" Value="{Binding NavigateEditCategoryViewCommand}"/>
                             <Setter Property="Content" Value="Wstecz"/>
                             <Setter Property="HorizontalAlignment" Value="Right"/>
                             <Setter Property="Margin" Value="0,0,20,0"/>

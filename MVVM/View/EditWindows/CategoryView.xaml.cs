@@ -1,6 +1,5 @@
 ﻿using Flashcards.MVVM.Model;
 using Flashcards.MVVM.View.DialogWindows.AddWindows;
-using Flashcards.MVVM.ViewModel;
 using Flashcards.MVVM.ViewModel.EditViewModel;
 using Flashcards.Stores;
 using System.Collections.Generic;
@@ -76,7 +75,7 @@ namespace Flashcards.MVVM.View.EditWindows
                     }
                 };
                 int categoryID = i;
-                btnNew.SetBinding(Button.CommandProperty, new Binding("NavigateEditOptionsCommand"));
+                btnNew.SetBinding(Button.CommandProperty, new Binding("NavigateEditCategoryOptionsCommand"));
                 btnNew.Click += (sender, e) => { EditCategoryViewModel edit = new EditCategoryViewModel(categoryID); };
                 myButtons.Add(btnNew);
             }
@@ -129,7 +128,7 @@ namespace Flashcards.MVVM.View.EditWindows
 
             };
             int categoryID = myButtons.Count;
-            btnNew.SetBinding(Button.CommandProperty, new Binding("NavigateEditOptionsCommand"));
+            btnNew.SetBinding(Button.CommandProperty, new Binding("NavigateEditCategoryOptionsCommand"));
             btnNew.Click += (sender, e) => { EditCategoryViewModel edit = new EditCategoryViewModel(categoryID); };
             myButtons.Add(btnNew);
 

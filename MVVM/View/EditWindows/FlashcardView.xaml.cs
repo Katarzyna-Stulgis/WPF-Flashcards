@@ -1,12 +1,12 @@
-﻿using Flashcards.MVVM.ViewModel.EditViewModel;
-using Flashcards.MVVM.Model;
+﻿using Flashcards.MVVM.Model;
+using Flashcards.MVVM.View.DialogWindows.AddWindows;
+using Flashcards.MVVM.ViewModel.EditViewModel;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Media;
-using Flashcards.MVVM.View.DialogWindows.AddWindows;
 
 namespace Flashcards.MVVM.View.EditWindows
 {
@@ -80,7 +80,7 @@ namespace Flashcards.MVVM.View.EditWindows
                     }
                 };
                 int fiszkaID = i;
-                btnNew.SetBinding(Button.CommandProperty, new Binding("NavigateEditFiszkaOptionsCommand"));
+                btnNew.SetBinding(Button.CommandProperty, new Binding("NavigateEditFlashcardOptionsCommand"));
                 btnNew.Click += (sender, e) => { EditFlashcardViewModel edit = new EditFlashcardViewModel(fiszkaID); };
                 myButtons.Add(btnNew);
             }
@@ -125,7 +125,7 @@ namespace Flashcards.MVVM.View.EditWindows
                     }
             };
             int fiszkaID = countFiszki - 1;
-            btnNew.SetBinding(Button.CommandProperty, new Binding("NavigateEditFiszkaOptionsCommand"));
+            btnNew.SetBinding(Button.CommandProperty, new Binding("NavigateEditFlashcardOptionsCommand"));
             btnNew.Click += (sender, e) => { EditFlashcardViewModel edit = new EditFlashcardViewModel(fiszkaID); };
             myButtons.Add(btnNew);
             StackPanelButtonsFiszka.Children.Add(btnNew);

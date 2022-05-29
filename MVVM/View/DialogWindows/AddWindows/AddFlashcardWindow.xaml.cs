@@ -1,5 +1,5 @@
-﻿using Flashcards.MVVM.ViewModel.EditViewModel;
-using Flashcards.MVVM.Model;
+﻿using Flashcards.MVVM.Model;
+using Flashcards.MVVM.ViewModel.EditViewModel;
 using System.Linq;
 using System.Windows;
 
