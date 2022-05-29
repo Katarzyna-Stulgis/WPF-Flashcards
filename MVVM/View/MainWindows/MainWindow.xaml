@@ -1,0 +1,97 @@
+﻿<Window x:Class="Flashcards.MVVM.View.MainWindows.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        
+        xmlns:viewMain="clr-namespace:Flashcards.MVVM.View.MainWindows"
+        xmlns:viewLearning="clr-namespace:Flashcards.MVVM.View.LearningWinodws"
+        xmlns:viewEdit="clr-namespace:Flashcards.MVVM.View.EditWindows"
+        
+        xmlns:viewmodelMain="clr-namespace:Flashcards.MVVM.ViewModel.MainViewModel"
+        xmlns:viewmodelLearning="clr-namespace:Flashcards.MVVM.ViewModel.LearningViewModel"
+        xmlns:viewmodelEdit="clr-namespace:Flashcards.MVVM.ViewModel.EditViewModel"
+        
+        mc:Ignorable="d"
+        WindowStyle="None"
+        Height="600" Width="1100"
+        Background="#3f4152"
+        WindowStartupLocation="CenterScreen">
+    
+    <Border BorderBrush="#282a36" BorderThickness="3">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Border Background="#282a36"
+                Grid.ColumnSpan="2"
+                MouseDown="Border_MouseDown">
+
+                <Grid HorizontalAlignment="Stretch">
+                    <Label Content="Fiszki"
+                        Foreground="Gray"
+                        FontWeight="SemiBold"/>
+
+                    <StackPanel HorizontalAlignment="Right"
+                            Orientation="Horizontal">
+
+                        <Button Width="20" Height="20"
+                            Content="🗕"
+                            Background="Transparent"
+                            BorderThickness="0"
+                            Foreground="Gray"
+                            FontWeight="Bold"
+                            Padding="0,0,0,2"
+                            Click="ButtonMinimize_Click"/>
+
+                        <Button Width="20" Height="20"
+                            Content="🗖"
+                            Background="Transparent"
+                            BorderThickness="0"
+                            Foreground="Gray"
+                            FontWeight="Bold"
+                            Padding="0,0,0,2"
+                            Click="ButtonMaximize_Click"/>
+
+                        <Button Width="20" Height="20"
+                            Content="✕"
+                            Background="Transparent"
+                            BorderThickness="0"
+                            Foreground="Gray"
+                            FontWeight="Bold"
+                            Click="CloseButton_Click"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+            <Grid Grid.Row="1">
+                <ContentControl Content="{Binding CurrentViewModel}">
+                    <ContentControl.Resources>
+                        <DataTemplate DataType="{x:Type viewmodelMain:MainMenuViewModel}">
+                            <viewMain:MainMenu/>
+                        </DataTemplate>
+                        <DataTemplate DataType="{x:Type viewmodelLearning:LearningCategoriesViewModel}">
+                            <viewLearning:LearningCategoriesView/>
+                        </DataTemplate>
+                        <DataTemplate DataType="{x:Type viewmodelEdit:EditCategoryViewModel}">
+                            <viewEdit:CategoryView/>
+                        </DataTemplate>
+                        <DataTemplate DataType="{x:Type viewmodelEdit:EditFlashcardViewModel}">
+                            <viewEdit:FlashcardView/>
+                        </DataTemplate>
+                        <DataTemplate DataType="{x:Type viewmodelEdit:EditCategoryOptionsViewModel}">
+                            <viewEdit:EditCategoryOptionsView/>
+                        </DataTemplate>
+                        <DataTemplate DataType="{x:Type viewmodelEdit:EditFlashcardOptionsViewModel}">
+                            <viewEdit:EditFlashcardOptionsView/>
+                        </DataTemplate>
+                        <DataTemplate DataType="{x:Type viewmodelLearning:LearningFlashcardsViewModel}">
+                            <viewLearning:LearningView/>
+                        </DataTemplate>
+                    </ContentControl.Resources>
+                </ContentControl>
+            </Grid>
+        </Grid>
+    </Border>
+</Window> 

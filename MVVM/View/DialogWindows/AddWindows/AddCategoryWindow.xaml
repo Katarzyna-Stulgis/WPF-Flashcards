@@ -1,0 +1,97 @@
+﻿<Window x:Class="Flashcards.MVVM.View.DialogWindows.AddWindows.AddCategoryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        Height="225" Width="450"
+        Background="#3f4152"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+
+    <Border BorderBrush="#282a36" BorderThickness="3">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="27"/>
+                <RowDefinition Height="60"/>
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0"
+                   Content="Nowa Kategoria"
+                   Foreground="White"
+                   VerticalAlignment="Top"
+                   Background="#282a36"/>
+
+            <Label Grid.Row="1"
+                   Content="Podaj nazwę nowej kategorii"
+                   Foreground="White"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   FontWeight="SemiBold"
+                   FontSize="18"/>
+
+            <Border Grid.Row="2"
+                    CornerRadius="8"
+                    Background="#B7E8FF"
+                    Width="360"
+                    Height="45">
+                <TextBox Grid.Row="2"
+                         x:Name="CategoryName"
+                         Background="Transparent"
+                         Foreground="Black"
+                         Width="350"
+                         Height="35"
+                         Margin="5,0,5,0"
+                         FontWeight="Bold"
+                         FontSize="20"
+                         BorderThickness="0"
+                         VerticalContentAlignment="Center"
+                         Focusable="True"/>
+            </Border>
+
+            <Label Grid.Row="3"
+                   x:Name="error"
+                   Foreground="Red"
+                   FontSize="12"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Padding="0,0,0,10"/>
+
+            <Grid Grid.Row="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0"
+                        Style="{StaticResource YNButton}" 
+                        Click="SaveButton_Click"
+                        x:Name="saveButton">
+                    <Button.Resources>
+                        <Style TargetType="Button">
+                            <Setter Property="Content" Value="ZAPISZ"/>
+                            <Setter Property="HorizontalAlignment" Value="Right"/>
+                            <Setter Property="Margin" Value="0,0,20,0"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+                <Button Grid.Column="1"
+                        Style="{StaticResource YNButton}"
+                        Click="CancelButton_Click">
+                    <Button.Resources>
+                        <Style TargetType="Button">
+                            <Setter Property="Content" Value="ANULUJ"/>
+                            <Setter Property="HorizontalAlignment" Value="Left"/>
+                            <Setter Property="Margin" Value="20,0,0,0"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

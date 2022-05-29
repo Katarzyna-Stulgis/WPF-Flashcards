@@ -1,0 +1,9 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\katar\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\katar\\.nuget\\packages",
+      "S:\\Środowiska\\Microsoft Visual Studio\\sdk\\NuGetPackages"
+    ]
+  }
+}

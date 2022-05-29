@@ -1,0 +1,62 @@
+﻿<UserControl x:Class="Flashcards.MVVM.View.MainWindows.MainMenu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" 
+             d:DesignHeight="575" d:DesignWidth="1100">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0"
+               Background="Transparent"
+               Content="FLASHCARDS"
+               Foreground="White"
+               FontSize="90"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center">
+        </Label>
+
+        <Button Grid.Row="1"
+                Style="{StaticResource MenuButton}"
+                Margin="0,20,0,20">
+            <Button.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="Content" Value="ROZPOCZNIJ NAUKĘ"/>
+                    <Setter Property="Command" Value="{Binding NavigateLearningCommand}"/>
+                    <Setter Property="VerticalAlignment" Value="Bottom"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Grid.Row="2"
+                Style="{StaticResource MenuButton}"
+                Margin="0,20,0,20">
+            <Button.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="Content" Value="EDYCJA"/>
+                    <Setter Property="Command" Value="{Binding NavigateEditCommand}"/>
+                    <Setter Property="VerticalAlignment" Value="Bottom"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Grid.Row="3"
+                Style="{StaticResource MenuButton}" 
+                Click="ExitButton_Click"
+                Margin="0,20,0,20">
+            <Button.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="Content" Value="WYJŚCIE"/>
+                    <Setter Property="VerticalAlignment" Value="Bottom"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</UserControl>
