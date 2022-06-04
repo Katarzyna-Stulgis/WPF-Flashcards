@@ -49,7 +49,7 @@ namespace Flashcards.MVVM.View.EditWindows
             int CategoryID = model.getCategoryID();
 
             int countFiszki = folder.categories.ElementAt(CategoryID).fiszki.Count();
-            var converter = new System.Windows.Media.BrushConverter();
+            var converter = new BrushConverter();
 
             var brushBackground = (Brush)converter.ConvertFromString("#161426");
             var brushForeground = (Brush)converter.ConvertFromString("#ffffff");
@@ -63,8 +63,7 @@ namespace Flashcards.MVVM.View.EditWindows
                     Foreground = brushForeground,
                     Content = fiszka,
                     FontSize = 20,
-                    Width = 975,
-                    Height = 50,
+                    Padding = new Thickness(30.0, 10.0, 30.0, 10.0),
                     Margin = new Thickness(0, 0, 0, 15),
                     HorizontalContentAlignment = HorizontalAlignment.Center,
                     VerticalContentAlignment = VerticalAlignment.Center,
@@ -95,7 +94,7 @@ namespace Flashcards.MVVM.View.EditWindows
             int CategoryID = model.getCategoryID();
 
             int countFiszki = folder.categories.ElementAt(CategoryID).fiszki.Count();
-            var converter = new System.Windows.Media.BrushConverter();
+            var converter = new BrushConverter();
 
             var brushBackground = (Brush)converter.ConvertFromString("#161426");
             var brushForeground = (Brush)converter.ConvertFromString("#ffffff");
@@ -108,8 +107,7 @@ namespace Flashcards.MVVM.View.EditWindows
                 Foreground = brushForeground,
                 Content = fiszka,
                 FontSize = 20,
-                Width = 975,
-                Height = 50,
+                Padding = new Thickness(30.0, 10.0, 30.0, 10.0),
                 Margin = new Thickness(0, 0, 0, 15),
                 HorizontalContentAlignment = HorizontalAlignment.Center,
                 VerticalContentAlignment = VerticalAlignment.Center,

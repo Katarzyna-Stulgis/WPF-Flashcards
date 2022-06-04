@@ -13,7 +13,7 @@ namespace Flashcards.MVVM.View.RenameWindows
         public RenameFlashcardENG()
         {
             InitializeComponent();
-            FiszkaENG.Focus();
+            FlashcardENG.Focus();
 
             EditFlashcardOptionsViewModel model = new EditFlashcardOptionsViewModel();
             int CategoryID = model.getCategoryID();
@@ -22,7 +22,7 @@ namespace Flashcards.MVVM.View.RenameWindows
             Folder folder = new Folder();
             folder = folder.ShowFolder();
 
-            fiszka.Content = folder.categories.ElementAt(CategoryID).fiszki.ElementAt(FiszkaID).odpowiedz;
+            FlashcardENG.Text = folder.categories.ElementAt(CategoryID).fiszki.ElementAt(FiszkaID).odpowiedz;
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
@@ -34,7 +34,7 @@ namespace Flashcards.MVVM.View.RenameWindows
             Folder folder = new Folder();
             folder = folder.ShowFolder();
 
-            string fiszkaENG = FiszkaENG.Text;
+            string fiszkaENG = FlashcardENG.Text;
 
             if (!string.IsNullOrEmpty(fiszkaENG) && fiszkaENG.Length <= 46)
             {

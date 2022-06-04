@@ -33,7 +33,7 @@
                             <Setter Property="Command" Value="{Binding NavigateEditCategoryViewCommand}"/>
                             <Setter Property="Content" Value="Wstecz"/>
                             <Setter Property="HorizontalAlignment" Value="Right"/>
-                            <Setter Property="Margin" Value="0,0,20,0"/>
+                            <Setter Property="Margin" Value="0,20,20,0"/>
                         </Style>
                     </Button.Resources>
                 </Button>
@@ -50,7 +50,10 @@
                 </Button.Resources>
             </Button>
 
-            <StackPanel x:Name="StackPanelButtonsFiszka" Grid.Row="2" Margin="0,30,0,0">
+            <StackPanel Grid.Row="2"
+                        Name="StackPanelButtonsFiszka" 
+                        Margin="0,30,0,0"
+                        HorizontalAlignment="Center">
             </StackPanel>
 
         </Grid>

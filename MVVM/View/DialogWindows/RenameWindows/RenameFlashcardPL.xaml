@@ -10,7 +10,7 @@
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize">
 
-    <Border BorderBrush="#282a36" BorderThickness="3" CornerRadius="6" >
+    <Border BorderBrush="#282a36" BorderThickness="3">
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="30"/>
@@ -34,13 +34,6 @@
                    HorizontalAlignment="Center"
                    FontWeight="SemiBold"
                    FontSize="18"/>
-            <Label Grid.Row="2"
-                   x:Name="fiszka"
-                   Foreground="White"
-                   VerticalAlignment="Center"
-                   HorizontalAlignment="Center"
-                   FontWeight="SemiBold"
-                   FontSize="18"/>
 
             <Border Grid.Row="3"
                     CornerRadius="8"
@@ -48,7 +41,7 @@
                     Width="360"
                     Height="45">
                 <TextBox Grid.Row="3"
-                     x:Name="FiszkaPL"
+                     x:Name="FlashcardPL"
                      Background="Transparent"
                      Foreground="Black"
                      Width="350"

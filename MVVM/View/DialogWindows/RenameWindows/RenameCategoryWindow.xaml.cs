@@ -13,14 +13,14 @@ namespace Flashcards.MVVM.View.RenameWindows
         public RenameCategoryWindow()
         {
             InitializeComponent();
-            category.Focus();
+            CategoryTextBox.Focus();
             EditCategoryOptionsViewModel model = new EditCategoryOptionsViewModel();
             int CategoryID = model.getCategoryID();
 
             Folder folder = new Folder();
             folder = folder.ShowFolder();
 
-            CategoryName.Content = folder.categories.ElementAt(CategoryID).name;
+            CategoryTextBox.Text = folder.categories.ElementAt(CategoryID).name;
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
@@ -31,7 +31,7 @@ namespace Flashcards.MVVM.View.RenameWindows
             Folder folder = new Folder();
             folder = folder.ShowFolder();
 
-            string categoryN = category.Text;
+            string categoryN = CategoryTextBox.Text;
 
             if (!string.IsNullOrEmpty(categoryN) && categoryN.Length <= 46)
             {

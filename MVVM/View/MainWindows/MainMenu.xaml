@@ -5,13 +5,13 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" 
              d:DesignHeight="575" d:DesignWidth="1100">
-    
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="3*"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
 
         <Label Grid.Row="0"
@@ -24,37 +24,37 @@
         </Label>
 
         <Button Grid.Row="1"
-                Style="{StaticResource MenuButton}"
-                Margin="0,20,0,20">
+                Style="{StaticResource MenuButton}">
             <Button.Resources>
                 <Style TargetType="Button">
                     <Setter Property="Content" Value="ROZPOCZNIJ NAUKĘ"/>
                     <Setter Property="Command" Value="{Binding NavigateLearningCommand}"/>
                     <Setter Property="VerticalAlignment" Value="Bottom"/>
+                    <Setter Property="Margin" Value="0,20,0,20"/>
                 </Style>
             </Button.Resources>
         </Button>
 
         <Button Grid.Row="2"
-                Style="{StaticResource MenuButton}"
-                Margin="0,20,0,20">
+                Style="{StaticResource MenuButton}">
             <Button.Resources>
                 <Style TargetType="Button">
                     <Setter Property="Content" Value="EDYCJA"/>
                     <Setter Property="Command" Value="{Binding NavigateEditCommand}"/>
                     <Setter Property="VerticalAlignment" Value="Bottom"/>
+                    <Setter Property="Margin" Value="0,20,0,20"/>
                 </Style>
             </Button.Resources>
         </Button>
 
         <Button Grid.Row="3"
                 Style="{StaticResource MenuButton}" 
-                Click="ExitButton_Click"
-                Margin="0,20,0,20">
+                Click="ExitButton_Click">
             <Button.Resources>
                 <Style TargetType="Button">
                     <Setter Property="Content" Value="WYJŚCIE"/>
                     <Setter Property="VerticalAlignment" Value="Bottom"/>
+                    <Setter Property="Margin" Value="0,20,0,20"/>
                 </Style>
             </Button.Resources>
         </Button>

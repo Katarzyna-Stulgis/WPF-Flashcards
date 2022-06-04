@@ -21,7 +21,7 @@ namespace Flashcards.MVVM.View.RenameWindows
             Folder folder = new Folder();
             folder = folder.ShowFolder();
 
-            fiszka.Content = folder.categories.ElementAt(CategoryID).fiszki.ElementAt(FiszkaID).pytanie;
+            FlashcardPL.Text = folder.categories.ElementAt(CategoryID).fiszki.ElementAt(FiszkaID).pytanie;
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
@@ -33,7 +33,7 @@ namespace Flashcards.MVVM.View.RenameWindows
             Folder folder = new Folder();
             folder = folder.ShowFolder();
 
-            string fiszkaPL = FiszkaPL.Text;
+            string fiszkaPL = FlashcardPL.Text;
 
             if (!string.IsNullOrEmpty(fiszkaPL) && fiszkaPL.Length <= 46)
             {
