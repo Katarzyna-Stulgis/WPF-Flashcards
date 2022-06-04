@@ -31,7 +31,7 @@ namespace Flashcards.MVVM.View.LearningWinodws
             folder = folder.ShowFolder();
 
             int countCategories = folder.categories.Count();
-            var converter = new System.Windows.Media.BrushConverter();
+            var converter = new BrushConverter();
 
             var brushBackground = (Brush)converter.ConvertFromString("#161426");
             var brushForeground = (Brush)converter.ConvertFromString("#ffffff");
@@ -45,9 +45,8 @@ namespace Flashcards.MVVM.View.LearningWinodws
                     Foreground = brushForeground,
                     Content = folder.categories.ElementAt(i).name,
                     FontSize = 20,
-                    Width = 500,
-                    Height = 50,
-                    Margin = new Thickness(0, 0, 0, 15),
+                    Padding = new Thickness(30.0, 10.0, 30.0, 10.0),
+                    Margin = new Thickness(15, 0, 15, 15),
                     HorizontalContentAlignment = HorizontalAlignment.Center,
                     VerticalContentAlignment = VerticalAlignment.Center,
                     Resources = {
@@ -60,7 +59,6 @@ namespace Flashcards.MVVM.View.LearningWinodws
                             }
                         }
                     }
-
                 };
                 int categoryID = i;
                 btnNew.SetBinding(Button.CommandProperty, new Binding("NavigateLearningFlashcardsCommand"));

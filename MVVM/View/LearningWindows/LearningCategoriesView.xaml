@@ -8,17 +8,17 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Grid>
+
+        <Grid Grid.Row="0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
             <Label Grid.Row="0"
-                   Content="Kategorie"
+                   Content="Kategorie" 
                    Foreground="White"
                    FontSize="35"
                    Margin="20,0,0,0"/>
@@ -35,20 +35,26 @@
                 </Button.Resources>
             </Button>
         </Grid>
+
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <ScrollViewer>
-                <StackPanel x:Name="StackPanelButtons" Grid.Column="0" Margin="0,30,0,0"></StackPanel>
+
+            <ScrollViewer Grid.Column="0"
+                          CanContentScroll="True">
+                <StackPanel Name="StackPanelButtons" 
+                            Margin="0,30,0,0">
+                </StackPanel>
             </ScrollViewer>
-            <Image Source="/Images/3.png"
+
+            <Image Grid.Column="1"
+                   Source="/Images/Learning.png"
                    Margin="0,80,0,0"
-                   VerticalAlignment="Top"
-                   HorizontalAlignment="Right"
-                   Width="400"
-                   Grid.Column="1"/>
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   Width="550"/>
         </Grid>
     </Grid>
 </UserControl>

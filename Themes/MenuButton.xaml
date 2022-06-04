@@ -8,7 +8,7 @@
                     <Grid>
                         <Button Background="#58c5fc"
                                 Foreground="White"
-                                Padding="0,15"
+                                Height="45"
                                 Width="300"
                                 FontWeight="Bold"
                                 FontSize="20">

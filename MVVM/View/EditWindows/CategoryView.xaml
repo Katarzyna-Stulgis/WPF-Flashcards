@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="575" d:DesignWidth="1100">
 
-    <ScrollViewer>
+
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"/>
@@ -52,11 +52,12 @@
                 </Button.Resources>
             </Button>
 
-            <StackPanel x:Name="StackPanelButtons" 
-                        Grid.Row="2" 
-                        Margin="0,30,0,0">
-            </StackPanel>
-
+            <ScrollViewer Grid.Row="2" 
+                          Padding="30"
+                          CanContentScroll="True">
+                <StackPanel Name="StackPanelButtons" 
+                            Margin="0,30,0,0">
+                </StackPanel>
+            </ScrollViewer>
         </Grid>
-    </ScrollViewer>
 </UserControl>

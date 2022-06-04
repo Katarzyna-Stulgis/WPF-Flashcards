@@ -1,6 +1,5 @@
 ﻿using Flashcards.MVVM.Model;
 using Flashcards.MVVM.ViewModel.LearningViewModel;
-using System;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
@@ -30,22 +29,27 @@ namespace Flashcards.MVVM.View.LearningWinodws
             LearningFlashcardsViewModel startFiszkaViewModel = new LearningFlashcardsViewModel();
             int CategoryID = startFiszkaViewModel.getCategoryID();
 
-            FiszkaID = startFiszkaViewModel.getFiszkaID()+1;
+            FiszkaID = startFiszkaViewModel.getFiszkaID() + 1;
 
             Category.Content = "Fiszki kategorii: " + folder.categories.ElementAt(CategoryID).name;
 
             if (folder.categories.ElementAt(CategoryID).fiszki.Count != 0)
             {
                 FiszkaPL.Content = folder.categories.ElementAt(CategoryID).fiszki.First(x => x.id == FiszkaID).pytanie;
-                int i = FiszkaID ;
+                int i = FiszkaID;
                 int all = folder.categories.ElementAt(CategoryID).fiszki.Count();
                 number.Content = "Fiszka: " + i + " / " + all;
             }
             else
             {
-                FiszkaPL.Content = "Nie posiadasz Fiszek";
-                FiszkaENG.Content = "Przejdź do edycji i dodaj fiszki";
-                number.Content = "brak fiszek";
+                FiszkaBorder.Visibility = Visibility.Hidden;
+                ShowButton.Visibility = Visibility.Hidden;
+                PreviousButton.Visibility = Visibility.Hidden;
+                ShuffleButton.Visibility = Visibility.Hidden;
+                NextButton.Visibility = Visibility.Hidden;
+                NumberOfFlashcards.Visibility = Visibility.Hidden;
+
+                Error.Content = "Nie posiadasz Fiszek. Przejdź do edycji i dodaj fiszki";
             }
         }
 
@@ -59,22 +63,22 @@ namespace Flashcards.MVVM.View.LearningWinodws
 
             if (folder.categories.ElementAt(CategoryID).fiszki.Count != 0)
             {
-                if (String.IsNullOrEmpty((string)FiszkaENG.Content))
+                if (FiszkaPL.Content.Equals(folder.categories.ElementAt(CategoryID).fiszki.First(x => x.id == FiszkaID).pytanie))
                 {
-                    FiszkaENG.Content = folder.categories.ElementAt(CategoryID).fiszki.First(x =>x.id == FiszkaID).odpowiedz;
-                    show.Content = "Ukryj Odpowiedź";
+                    FiszkaPL.Content = folder.categories.ElementAt(CategoryID).fiszki.First(x => x.id == FiszkaID).odpowiedz;
+                    ShowButton.Content = "Ukryj Odpowiedź";
                 }
                 else
                 {
-                    FiszkaENG.Content = "";
-                    show.Content = "Pokaż Odpowiedź";
+                    FiszkaPL.Content = folder.categories.ElementAt(CategoryID).fiszki.First(x => x.id == FiszkaID).pytanie;
+                    ShowButton.Content = "Pokaż Odpowiedź"; ;
                 }
             }
         }
 
         private void PreviousButton_Click(object sender, RoutedEventArgs e)
         {
-            show.Content = "Pokaż Odpowiedź";
+            ShowButton.Content = "Pokaż Odpowiedź";
             Folder folder = new Folder();
             folder = folder.ShowFolder();
 
@@ -87,12 +91,11 @@ namespace Flashcards.MVVM.View.LearningWinodws
                 FiszkaID = folder.categories.ElementAt(CategoryID).fiszki.Count;
             }
 
-
             if (folder.categories.ElementAt(CategoryID).fiszki.Count != 0)
             {
-                FiszkaENG.Content = "";
+
                 FiszkaPL.Content = "";
-                FiszkaPL.Content = folder.categories.ElementAt(CategoryID).fiszki.First(x =>x.id == FiszkaID).pytanie;
+                FiszkaPL.Content = folder.categories.ElementAt(CategoryID).fiszki.First(x => x.id == FiszkaID).pytanie;
 
                 int i = FiszkaID;
                 int all = folder.categories.ElementAt(CategoryID).fiszki.Count();
@@ -102,7 +105,7 @@ namespace Flashcards.MVVM.View.LearningWinodws
 
         private void NextButton_Click(object sender, RoutedEventArgs e)
         {
-            show.Content = "Pokaż Odpowiedź";
+            ShowButton.Content = "Pokaż Odpowiedź";
             Folder folder = new Folder();
             folder = folder.ShowFolder();
 
@@ -110,14 +113,13 @@ namespace Flashcards.MVVM.View.LearningWinodws
             int CategoryID = startFiszkaViewModel.getCategoryID();
 
             FiszkaID++;
-            if (folder.categories.ElementAt(CategoryID).fiszki.Count +1 == FiszkaID)
+            if (folder.categories.ElementAt(CategoryID).fiszki.Count + 1 == FiszkaID)
             {
                 FiszkaID = 1;
             }
 
             if (folder.categories.ElementAt(CategoryID).fiszki.Count != 0)
             {
-                FiszkaENG.Content = "";
                 FiszkaPL.Content = "";
                 FiszkaPL.Content = folder.categories.ElementAt(CategoryID).fiszki.First(x => x.id == FiszkaID).pytanie;
 
@@ -136,14 +138,12 @@ namespace Flashcards.MVVM.View.LearningWinodws
             int CategoryID = startFiszkaViewModel.getCategoryID();
 
             folder.categories.ElementAt(CategoryID).ShuffleFlashcards();
-            
-            FiszkaENG.Content = "";
 
             int flashcardId = folder.categories.ElementAt(CategoryID).fiszki.First().id;
             FiszkaID = flashcardId;
             FiszkaPL.Content = folder.categories.ElementAt(CategoryID).fiszki.First(x => x.id == flashcardId).pytanie;
 
-            int i = FiszkaID ;
+            int i = FiszkaID;
             int all = folder.categories.ElementAt(CategoryID).fiszki.Count();
             number.Content = "Fiszka: " + i + " / " + all;
         }

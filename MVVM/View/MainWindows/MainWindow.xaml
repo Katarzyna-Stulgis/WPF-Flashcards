@@ -16,7 +16,8 @@
         WindowStyle="None"
         Height="600" Width="1100"
         Background="#3f4152"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanResizeWithGrip" AllowsTransparency="True">
     
     <Border BorderBrush="#282a36" BorderThickness="3">
         <Grid>

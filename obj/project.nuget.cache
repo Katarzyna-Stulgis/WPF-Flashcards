@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "c20mEwNmCkCsCRyStbArOu2CobHHtkuYH9agq89qc2w2FKEynjaaiso+n8NW6uBB9ykqmtP48L6NgsLJd9L1OA==",
+  "dgSpecHash": "vxVBUJZmbXzHJCN/E7O2PX4nEIH1NjoFenLdGPJgNv4nVCRBKR8rq/Nx+5/4XTZzW3RGuN+9VyO9zJw0TxY82Q==",
   "success": true,
-  "projectFilePath": "S:\\Semestr_VI\\WPF\\PROJEKT\\WPF-Flashcards\\Flashcards.csproj",
+  "projectFilePath": "C:\\Users\\Bartek\\Desktop\\Fiszki\\WPF-Flashcards\\Flashcards.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\katar\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\Bartek\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

@@ -108,6 +108,9 @@
     <Page Update="Themes\MenuButton.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Themes\Scrollbar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Themes\YNButton.xaml">
       <SubType>Designer</SubType>
     </Page>
