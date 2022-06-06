@@ -1,6 +1,4 @@
-﻿using Flashcards.MVVM.View.DeleteWindows;
-using Flashcards.MVVM.View.RenameWindows;
-using Flashcards.MVVM.ViewModel.EditViewModel;
+﻿using Flashcards.MVVM.View.DialogWindows;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -18,23 +16,14 @@ namespace Flashcards.MVVM.View.EditWindows
 
         private void RenameButton_Click(object sender, RoutedEventArgs e)
         {
-            EditCategoryOptionsViewModel model = new EditCategoryOptionsViewModel();
-            int CategoryID = model.getCategoryID();
-
-            RenameCategoryWindow renameCategoryWindow = new RenameCategoryWindow();
+            RenameWindow renameCategoryWindow = new RenameWindow("RenameCategoryWindow");
             renameCategoryWindow.ShowDialog();
-
         }
 
         private void DeleteButton_Click(object sender, RoutedEventArgs e)
         {
-            EditCategoryOptionsViewModel model = new EditCategoryOptionsViewModel();
-            int CategoryID = model.getCategoryID();
-
-
-            DeleteCategoryWindow deleteCategoryWindow = new DeleteCategoryWindow();
+            DeleteWindow deleteCategoryWindow = new DeleteWindow("DeleteCategoryWindow");
             deleteCategoryWindow.ShowDialog();
-
         }
     }
 }

@@ -1,7 +1,4 @@
-﻿using Flashcards.MVVM.Model;
-using Flashcards.MVVM.View.DeleteWindows;
-using Flashcards.MVVM.View.RenameWindows;
-using Flashcards.MVVM.ViewModel.EditViewModel;
+﻿using Flashcards.MVVM.View.DialogWindows;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -18,37 +15,20 @@ namespace Flashcards.MVVM.View.EditWindows
         }
         private void EditPLFiszkaButton_Click(object sender, RoutedEventArgs e)
         {
-            EditFlashcardOptionsViewModel model = new EditFlashcardOptionsViewModel();
-            int CategoryID = model.getCategoryID();
-
-            RenameFlashcardPL renamePLFiszkaWindow = new RenameFlashcardPL();
+            RenameWindow renamePLFiszkaWindow = new RenameWindow("RenameFlashcardPL");
             renamePLFiszkaWindow.ShowDialog();
-
         }
 
         private void EditENGFiszkaButton_Click(object sender, RoutedEventArgs e)
         {
-            EditFlashcardOptionsViewModel model = new EditFlashcardOptionsViewModel();
-            int CategoryID = model.getCategoryID();
-
-            Folder folder = new Folder();
-            folder = folder.ShowFolder();
-
-            RenameFlashcardENG renameANGFiszkaWindow = new RenameFlashcardENG();
+            RenameWindow renameANGFiszkaWindow = new RenameWindow("RenameFlashcardENG");
             renameANGFiszkaWindow.ShowDialog();
-
         }
 
         private void DeleteFiszkaButton_Click(object sender, RoutedEventArgs e)
         {
-            EditFlashcardOptionsViewModel model = new EditFlashcardOptionsViewModel();
-            int CategoryID = model.getCategoryID();
-
-            Folder folder = new Folder();
-            folder = folder.ShowFolder();
-
-            DeleteFlashcardWindow deleteFiszkaWindow = new DeleteFlashcardWindow();
-            deleteFiszkaWindow.ShowDialog();
+            DeleteWindow deleteWindow = new DeleteWindow("DeleteFlashcardWindow");
+            deleteWindow.ShowDialog();
         }
     }
 }

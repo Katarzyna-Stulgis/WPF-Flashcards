@@ -127,10 +127,6 @@ S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\bin\Debug\net5.0-windows\Newtonsoft.Jso
 S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\Flashcards.csproj.AssemblyReference.cache
 S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\MVVM\View\DialogWindows\AddWindows\AddCategoryWindow.baml
 S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\MVVM\View\DialogWindows\AddWindows\AddFlashcardWindow.baml
-S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\MVVM\View\DialogWindows\DeleteWindows\DeleteFlashcardWindow.baml
-S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\MVVM\View\DialogWindows\RenameWindows\RenameCategoryWindow.baml
-S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\MVVM\View\DialogWindows\RenameWindows\RenameFlashcardENG.baml
-S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\MVVM\View\DialogWindows\RenameWindows\RenameFlashcardPL.baml
 S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\MVVM\View\EditWindows\FlashcardView.baml
 S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\MVVM\View\LearningWindows\LearningCategoriesView.baml
 S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\MVVM\View\LearningWindows\LearningView.baml
@@ -140,12 +136,7 @@ S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\Themes\YNButto
 S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\App.baml
 S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\MVVM\View\DialogWindows\AddWindows\AddCategoryWindow.g.cs
 S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\MVVM\View\DialogWindows\AddWindows\AddFlashcardWindow.g.cs
-S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\MVVM\View\DialogWindows\DeleteWindows\DeleteCategoryWindow.g.cs
-S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\MVVM\View\DialogWindows\DeleteWindows\DeleteFlashcardWindow.g.cs
 S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\MVVM\View\DialogWindows\ExitWindow.g.cs
-S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\MVVM\View\DialogWindows\RenameWindows\RenameCategoryWindow.g.cs
-S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\MVVM\View\DialogWindows\RenameWindows\RenameFlashcardENG.g.cs
-S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\MVVM\View\DialogWindows\RenameWindows\RenameFlashcardPL.g.cs
 S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\MVVM\View\EditWindows\CategoryView.g.cs
 S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\MVVM\View\EditWindows\EditCategoryOptionsView.g.cs
 S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\MVVM\View\EditWindows\EditFlashcardOptionsView.g.cs
@@ -158,7 +149,6 @@ S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\App.g.cs
 S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\GeneratedInternalTypeHelper.g.cs
 S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\Flashcards_MarkupCompile.cache
 S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\Flashcards_MarkupCompile.lref
-S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\MVVM\View\DialogWindows\DeleteWindows\DeleteCategoryWindow.baml
 S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\MVVM\View\DialogWindows\ExitWindow.baml
 S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\MVVM\View\EditWindows\CategoryView.baml
 S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\MVVM\View\EditWindows\EditCategoryOptionsView.baml
@@ -236,3 +226,7 @@ C:\Users\Bartek\Desktop\Fiszki\WPF-Flashcards\obj\Debug\net5.0-windows\Flashcard
 S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\bin\Debug\net5.0-windows\Images\Learning.png
 S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\Themes\Scrollbar.baml
 S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\Flashcards_Content.g.cs
+S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\MVVM\View\DialogWindows\DeleteWindow.baml
+S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\MVVM\View\DialogWindows\DeleteWindow.g.cs
+S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\MVVM\View\DialogWindows\RenameWindow.baml
+S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\MVVM\View\DialogWindows\RenameWindow.g.cs

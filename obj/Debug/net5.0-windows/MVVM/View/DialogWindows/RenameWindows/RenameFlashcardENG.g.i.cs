@@ -68,8 +68,8 @@ namespace Flashcards.MVVM.View.RenameWindows {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Flashcards;V1.0.0.0;component/mvvm/view/dialogwindows/renamewindows/renameflashc" +
-                    "ardeng.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Flashcards;component/mvvm/view/dialogwindows/renamewindows/renameflashcardeng.xa" +
+                    "ml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\..\MVVM\View\DialogWindows\RenameWindows\RenameFlashcardENG.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

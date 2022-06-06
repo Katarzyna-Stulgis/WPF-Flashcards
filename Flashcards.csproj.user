@@ -13,22 +13,13 @@
     <Compile Update="MVVM\View\DialogWindows\AddWindows\AddFlashcardWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="MVVM\View\DialogWindows\DeleteWindows\DeleteCategoryWindow.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="MVVM\View\DialogWindows\DeleteWindows\DeleteFlashcardWindow.xaml.cs">
+    <Compile Update="MVVM\View\DialogWindows\DeleteWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="MVVM\View\DialogWindows\ExitWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="MVVM\View\DialogWindows\RenameWindows\RenameCategoryWindow.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="MVVM\View\DialogWindows\RenameWindows\RenameFlashcardENG.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="MVVM\View\DialogWindows\RenameWindows\RenameFlashcardPL.xaml.cs">
+    <Compile Update="MVVM\View\DialogWindows\RenameWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="MVVM\View\EditWindows\CategoryView.xaml.cs">
@@ -60,22 +51,13 @@
     <Page Update="MVVM\View\DialogWindows\AddWindows\AddFlashcardWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="MVVM\View\DialogWindows\DeleteWindows\DeleteCategoryWindow.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="MVVM\View\DialogWindows\DeleteWindows\DeleteFlashcardWindow.xaml">
+    <Page Update="MVVM\View\DialogWindows\DeleteWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MVVM\View\DialogWindows\ExitWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="MVVM\View\DialogWindows\RenameWindows\RenameCategoryWindow.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="MVVM\View\DialogWindows\RenameWindows\RenameFlashcardENG.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="MVVM\View\DialogWindows\RenameWindows\RenameFlashcardPL.xaml">
+    <Page Update="MVVM\View\DialogWindows\RenameWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MVVM\View\EditWindows\CategoryView.xaml">
