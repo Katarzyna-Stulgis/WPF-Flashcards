@@ -233,3 +233,6 @@ C:\Users\Bartek\Desktop\Fiszki\WPF-Flashcards\obj\Debug\net5.0-windows\Flashcard
 C:\Users\Bartek\Desktop\Fiszki\WPF-Flashcards\obj\Debug\net5.0-windows\Flashcards.genruntimeconfig.cache
 C:\Users\Bartek\Desktop\Fiszki\WPF-Flashcards\bin\Debug\net5.0-windows\Images\Learning.png
 C:\Users\Bartek\Desktop\Fiszki\WPF-Flashcards\obj\Debug\net5.0-windows\Flashcards_Content.g.cs
+S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\bin\Debug\net5.0-windows\Images\Learning.png
+S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\Themes\Scrollbar.baml
+S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\Flashcards_Content.g.cs

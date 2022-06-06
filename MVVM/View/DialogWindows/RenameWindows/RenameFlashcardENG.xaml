@@ -28,7 +28,7 @@
                    Background="#282a36"/>
 
             <Label Grid.Row="1"
-                   Content="Podaj nowe angielskie hasło dla:"
+                   Content="Podaj nowe angielskie hasło:"
                    Foreground="White"
                    VerticalAlignment="Center"
                    HorizontalAlignment="Center"
