@@ -3,9 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Windows.Documents;
-using System.Windows;
-using System.Windows.Controls;
 
 namespace Flashcards.MVVM.Model
 {

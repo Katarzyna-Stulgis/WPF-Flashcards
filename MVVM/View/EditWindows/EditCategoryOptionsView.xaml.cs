@@ -44,7 +44,7 @@ namespace Flashcards.MVVM.View.EditWindows
             fd.Blocks.Add(new Paragraph());
             foreach (var item in flashcards)
             {
-                string flashcard = "\t"+item.pytanie + " - " + item.odpowiedz;
+                string flashcard = "\t" + item.pytanie + " - " + item.odpowiedz;
                 fd.Blocks.Add(new Paragraph(new Run(flashcard.ToString())));
             }
 
