@@ -12,6 +12,7 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
 
         <Grid>
@@ -72,6 +73,19 @@
         </Button>
 
         <Button Grid.Row="3"
+                Style="{StaticResource MenuButton}" 
+                Click="PrintButton_Click">
+            <Button.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="Content" Value="DRUKUJ"/>
+                    <Setter Property="VerticalAlignment" Value="Center"/>
+                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                    <Setter Property="Margin" Value="0,30,0,0"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Grid.Row="4"
                 Style="{StaticResource MenuButton}"
                 Click="DeleteButton_Click"
                 x:Name="delete">

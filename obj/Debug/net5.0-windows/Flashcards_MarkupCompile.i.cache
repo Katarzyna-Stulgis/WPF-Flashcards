@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\obj\Debug\net5.0-windows\
+C:\Users\Bartek\Desktop\WPF-Flashcards\obj\Debug\net5.0-windows\
 Flashcards
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-S:\Semestr_VI\WPF\PROJEKT\WPF-Flashcards\App.xaml
+C:\Users\Bartek\Desktop\WPF-Flashcards\App.xaml
 17478780962
 1-1116938605
 33422356829
-194-903576576
+194-435655124
 MVVM\View\DialogWindows\AddWindows\AddCategoryWindow.xaml;MVVM\View\DialogWindows\AddWindows\AddFlashcardWindow.xaml;MVVM\View\DialogWindows\DeleteWindow.xaml;MVVM\View\DialogWindows\ExitWindow.xaml;MVVM\View\DialogWindows\RenameWindow.xaml;MVVM\View\EditWindows\CategoryView.xaml;MVVM\View\EditWindows\EditCategoryOptionsView.xaml;MVVM\View\EditWindows\EditFlashcardOptionsView.xaml;MVVM\View\EditWindows\FlashcardView.xaml;MVVM\View\LearningWindows\LearningCategoriesView.xaml;MVVM\View\LearningWindows\LearningView.xaml;MVVM\View\MainWindows\MainMenu.xaml;MVVM\View\MainWindows\MainWindow.xaml;Themes\LearningButton.xaml;Themes\MenuButton.xaml;Themes\Scrollbar.xaml;Themes\YNButton.xaml;
 
-False
+True
 
