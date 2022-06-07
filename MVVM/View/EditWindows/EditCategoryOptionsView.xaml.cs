@@ -56,7 +56,7 @@ namespace Flashcards.MVVM.View.EditWindows
 
             IDocumentPaginatorSource idocument = fd;
 
-            pd.PrintDocument(idocument.DocumentPaginator, "Printing Flow Document...");
+            pd.PrintDocument(idocument.DocumentPaginator, "Flashcards");
         }
     }
 }
